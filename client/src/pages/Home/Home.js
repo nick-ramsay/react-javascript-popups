@@ -48,7 +48,7 @@ const Home = () => {
         <div>
             <div className="App">
                 <header className="App-header">
-                    <h1>React Javascript Popups</h1>
+                    <h1>React JavaScript Popups</h1>
                 </header>
                 <div className="mt-4">
                     <p>{yourName === "" || yourName === null || yourName === undefined ? "😞 Looks like you haven't entered a name 😞" : "😃 Welcome, " + yourName + "!😃"}</p>

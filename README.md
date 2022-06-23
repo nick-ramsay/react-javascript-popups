@@ -1,9 +1,11 @@
-# react-barebones-template
+# react-javascript-popups
 
-This a a very simple application using React and Express.
+This application is used to demo how JavaScript popups (https://www.w3schools.com/js/js_popup.asp) cannot be recorded in Datadog RUM and cannot be accessed by Datadog synthetics tests.
 
-The purpose of this repository is to create generic React application for simple, front-end applications.
+To test this on your own, copy this repository to your local machine and then do the following:
 
-Express.js is used as a solution for the application server so it can be deployed to Heroku.
-
-More details on application and packages will be added soon.
+1. Run ```npm install``` command to install all Node packages
+2. Create a RUM application in Datadog using the JavaScript NPM instrumentation
+3. Create a ```.env``` file in the ```client``` directory on the repo. Add your RUM application's ```site```, ```applicationId```, and ```clientToken``` to the ```.env``` file as environment variables. Please reference the ```.env-example``` file for an example of this configuration and make sure you use the same environment variable names.
+4. Start the application locally by running ```npm run client``` in your local repository
+5. If you'd like, you can also deploy a version of this application on Heroku. You'll need to add the ```.env``` environment variables as `Config Vars` in the Heroku app which can be found under your Heroku application's `Settings` page.
