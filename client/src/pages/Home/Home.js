@@ -51,8 +51,8 @@ const Home = () => {
                     <h1>React JavaScript Popups</h1>
                 </header>
                 <div className="mt-4">
-                    <p>{yourName === "" || yourName === null || yourName === undefined ? "😞 Looks like you haven't entered a name 😞" : "😃 Welcome, " + yourName + "!😃"}</p>
-                    {yourName === "" || yourName === null || yourName === undefined ?
+                    <p>{yourName === "" || yourName === null || yourName === "null" || yourName === undefined ? "😞 Looks like you haven't entered a name 😞" : "😃 Welcome, " + yourName + "!😃"}</p>
+                    {yourName === "" || yourName == null || yourName === "null" || yourName === undefined ?
                         <button type="button" id="enter-name-btn" className="m-1 btn btn-sm btn-success" onClick={initialNameCheck}>Enter Your Name</button> :
                         <div>
                             <button type="button" id="update-name-btn" className="m-1 btn btn-sm btn-success" onClick={updateName}>Update Your Name</button>
